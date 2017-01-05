@@ -1,0 +1,28 @@
+$sansFont: 'Josefin Sans', sans-serif;
+$serifFont: 'Merriweather', serif;
+$homeFont: 'Montserrat', sans-serif;
+$textColor: #666;
+$headingColor: #090F0F;
+$brandingColor: #34e4f6;
+$twitter: #00aced;
+$facebook: #3b5998;
+$googleplus: #dd4b39;
+$linkedin: #007bb6;
+$backgroundGradient:  linear-gradient(to right, rgba(0,0,0,0.81) 0%, rgba(71,71,71,0.81) 0%, rgba(89,89,89,0.81) 0%, rgba(102,102,102,0.81) 0%, rgba(0,0,0,0.79) 46%, rgba(0,0,0,0.77) 100%);
+@mixin textRules{
+    font:{
+        family: $serifFont;
+        size: 105%;
+   }
+    color: #fff;
+    line-height: 1.5em;
+}
+@mixin homeText{
+    color: #FFFFFF;
+    text-shadow: 3px 2px 4px #818080;
+}
+@mixin boxStyle{
+   background-color: rgba(69, 69, 69, 0.9);
+   box-shadow: 0 0 10px $brandingColor;
+  border-radius: 5px;
+}
