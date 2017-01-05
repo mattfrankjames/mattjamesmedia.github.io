@@ -9,20 +9,29 @@ dl, dd, ol, ul, figure {
 }
 html, body {
   box-sizing: border-box;
+  font-size: $base-font-size;
 }
 *,
 *:before,
 *:after {
   box-sizing: inherit;
 }
-
-
+  
+:root {
+  font-size: 0.875rem;
+  @media screen and (min-width: 20rem) {
+      font-size: calc(0.875rem + 0.5 * ((100vw - 20rem) / 60));
+  }
+  @media screen and (min-width: 80rem) {
+    font-size: 1.375rem;
+  }
+}
 /**
  * Basic styling
  */
 body {
-    font-family: $serifFont;
-    font-size: $base-font-size;
+    font-family: $systemFonts;
+    //font-size: $base-font-size;
     line-height: $base-line-height;
     font-weight: 300;
     color: $text-color;
