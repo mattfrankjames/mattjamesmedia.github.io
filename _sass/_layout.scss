@@ -4,7 +4,6 @@
 .site-header {
     
     border-top: 5px solid $brandingColor;
-    border-bottom: 5px solid $brandingColor;
     box-shadow: 0 0 10px $brandingColor;
     min-height: 4em;
     padding: 1.5em 0 .75em;
@@ -12,6 +11,24 @@
     display: flex;
     // Positioning context for the mobile navigation icon
     position: relative;
+    &__single {
+    height: 6em;
+    display: flex;
+    justify-content: space-between;
+    font-family: "Montserrat", sans-serif;
+    background-color: black;
+    padding: 1em 1em 1.5em 1em;
+    box-shadow: 0 0 10px #34e4f6;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    border-top: solid 5px #34e4f6;
+    @media screen and (min-width: 44em) {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: baseline;
+     } 
+  }
 }
 .site-header::after {
   content: "";
@@ -34,15 +51,22 @@
     font-family: $homeFont;
     font-weight: normal;
     text-align: center;
+    color: white;
+    text-shadow: 1px 1px 5px #30e3f6;
+    &:hover{
+      text-decoration: none;
+    }
+    &__single {
+      font-size: 2em;
+      flex: 2 0 auto;
+      margin-left: 1em;
+  }
 }
 .thin {
   font-family: $sansFont;
   text-transform: uppercase;
 }
-.site-nav {
-    float: right;
-    line-height: 56px;
-
+.nav {
     a{
       font-family: $sansFont;
       font-size: 1.5em;
@@ -71,14 +95,6 @@
   }
 
     @include media-query($on-palm) {
-        position: absolute;
-        top: 9px;
-        right: 30px;
-        background-color: $background-color;
-        border: 1px solid $grey-color-light;
-        border-radius: 5px;
-        text-align: right;
-
         .menu-icon {
             display: block;
             float: right;
@@ -99,8 +115,6 @@
         }
 
         .trigger {
-            clear: both;
-            display: none;
           a{
             font-size: 1.25em;
             margin-right: .75em;
@@ -121,11 +135,102 @@
 //desktop styles
 .trigger {
   display: flex;
-  justify-content: space-around;
-  width: 100%;    
+  //justify-content: space-around;
+  width: 100%; 
+  padding: 1em;   
   margin-top: 1rem;
+  @media screen and (min-width: 36em) {
+    justify-content: center;
+  }
+  &__single {
+  margin: .5em .75em 0 .75em;
+  color: white;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.5em;
+  //width: 100%;
+  @media screen and (min-width: 44em) {
+    justify-content: space-around;
+    margin-top: 1em;
+    flex: 1 1 35%;
+  }
 }
-
+}
+.nav {
+  position: fixed;
+  top: 5em;
+  bottom: 0;
+  background-color: black;
+  width: 300px;
+  left: -340px;
+  box-shadow: 10px 25px 55px #30e3f6;
+  transition: all .3s ease-in-out;
+  &--open {
+    transform: translateX(340px);
+  }
+  @media screen and (min-width: 36em) {
+    background-color: transparent;
+    box-shadow: none;
+    position: static;
+    width: auto;
+  }
+}
+.nav__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  &--item {
+    font-family: $sansFont;
+    color: white;
+  }
+}
+.nav__link {
+  color: inherit;
+  &:hover {
+    text-decoration: none;
+  }
+}
+.header__navTrigger {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+  position: absolute;
+  top: 1.5em;
+  left: 1.5em;
+  transition: all .3s ease-out;
+    &::after, &::before {
+      content: '';
+      display: block;
+      height: 5px;
+      width: 3.35em;
+      background-color: white;
+      margin-left: -10%;
+      transition: all .3s ease-out;
+      transform-origin: 13%;
+    }
+    &:hover {
+      text-decoration: none;
+    }
+  &--clicked {
+    color: transparent;
+  }
+  &--clicked::after {
+    transform: rotate(-45deg);
+  }
+  &--clicked::before {
+    transform: rotate(45deg);
+  }
+  @media screen and (min-width: 36em) {
+    display: none;
+  }
+}
+@media screen and (min-width: 36em) {
+  .nav__list {
+    display: flex;
+    &--item {
+      padding-right: 1.4rem;
+    }
+  }
+}
 /**
  * Site footer
  */
