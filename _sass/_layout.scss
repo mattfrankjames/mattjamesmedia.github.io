@@ -150,8 +150,9 @@
   //width: 100%;
   @media screen and (min-width: 44em) {
     justify-content: space-around;
-    margin-top: 1em;
+    // margin-top: 1em;
     flex: 1 1 35%;
+  
   }
 }
 }
@@ -181,6 +182,13 @@
   &--item {
     font-family: $sansFont;
     color: white;
+    border-bottom: 1px solid white;
+    &:last-of-type{
+      border-bottom: none;
+    }
+    @media screen and (min-width: 36em){
+      border-bottom: none;
+   }
   }
 }
 .nav__link {
@@ -384,6 +392,7 @@ svg.cp {
 .page-content {
     padding: $spacing-unit 0;
     line-height: 1.5em;
+    margin-top: 6em;
 }
 
 .page-heading {
