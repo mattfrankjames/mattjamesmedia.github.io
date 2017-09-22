@@ -1,0 +1,81 @@
+.header__menu--toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin: .75em;
+  font-size: 1.5rem;
+  vertical-align: middle;
+}
+.nav {
+  position: fixed;
+  left: 0;
+  overflow: hidden;
+  pointer-events: none;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 10;
+  &::before {
+    content: '';
+    display: block;
+    opacity: 0;
+    position: absolute;
+    transition: opacity 0.3s ease-out;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    will-change: opacity;
+    height: 100vh;
+    background: rgba(0, 0, 0 , 0.4);
+  }
+  &--visible {
+    pointer-events: auto;
+  }
+}
+.nav__container {
+  box-shadow: 2px 0 12px rgba(0,0,0,0.4);
+  color: #eeeeee;
+  width: 90vw;
+  max-width: 400px;
+  height: 100vh;
+  position: relative;
+  background: #44464a;
+  transform: translateX(-102%);
+  will-change: transform;
+
+}
+.nav--animate .nav__container{
+   transition: transform 0.13s ease-out;
+  }
+.nav--visible.nav--animate .nav__container {
+  transition: transform 0.33s ease-out;
+}
+.nav--visible.nav::before {
+  opacity: 1;
+}
+
+.nav--visible .nav__container {
+  transform: none;
+}
+
+.nav__content {
+  list-style: none;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  li {
+    height: 32px;
+    line-height: 32px;
+    &:hover {
+      background: #ccc;
+    }
+  }
+}
+
+.nav__link {
+  color: inherit;
+  text-decoration: none;
+  &:hover {
+    color: darken($navText, 5%);
+  }
+}

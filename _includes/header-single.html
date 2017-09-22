@@ -10,17 +10,13 @@
     <nav class="nav" id="nav">
 
       <div class="trigger trigger__single">
-        {% for my_page in site.pages %}
-          {% if my_page.title %}
-          <ul class="nav__list">
-      <li class="nav__list--item"><a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a></li>
-      <li class="nav__list--item"><a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a></li>
-      <li class="nav__list--item"><a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a></li>
-      <li class="nav__list--item"><a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a></li>
-      <li class="nav__list--item"><a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a></li>
-    </ul>
-          {% endif %}
-        {% endfor %}
+
+        <ul class="nav__list">
+          {% for my_page in site.pages %} {% if my_page.title %}
+          <li class="nav__list--item"><a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a></li>
+          {% endif %} {% endfor %}
+        </ul>
+
       </div>
     </nav>
 

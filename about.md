@@ -4,12 +4,8 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+![Matt James Profile Photo](/img/profilePhoto.jpg){:class="img--profile"}
+My name is Matt James and I have followed a long and circuitous path to come to the point that I am at today. I have been involved in media communications for over twenty years and began my foray into interactive media and design a little over seven years ago. When I'm not developing websites, designing and photographing for local startups or recording my thoughts, I can be found chasing kids, riding bikes and playing outside.[mattjamesmedia@gmail.com](mailto:mattjamesmedia@gmail.com)
 
-You can find the source code for the Jekyll new theme at:
-{% include icon-github.html username="jglovier" %} /
-[jekyll-new](https://github.com/jglovier/jekyll-new)
 
-You can find the source code for Jekyll at
-{% include icon-github.html username="jekyll" %} /
-[jekyll](https://github.com/jekyll/jekyll)
+ please regenerate
