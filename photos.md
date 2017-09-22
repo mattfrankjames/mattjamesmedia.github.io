@@ -4,9 +4,8 @@ title: Photography
 permalink: /photos/
 ---
 
-This is a test
 <section id="photography" class= "gallery">
-<div class="feature"></div>
+<div class="feature"><img src="/img/hermannNight.jpg" srcset="/img/hermannNight.jpg 1x, /img/hermannNight@2x.jpg 2x" alt="undefined" style=""></div>
   <div class= "thumbnails">
   <a href="/img/hermannNight.jpg" rel="/img/hermannNight@2x.jpg"><img src="/img/hermannNightTh-min.jpg" alt="Hermann Night Cyclocross"></a>
   <a href="/img/dustStairs.jpg" rel="/img/dustStairs@2x.jpg"><img src="/img/dustStairsTh-min.jpg" alt="Dogfish racer at Hermann Night race"></a>
