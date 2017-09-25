@@ -1,0 +1,33 @@
+{
+  "name": "personal_jekyll_site",
+  "version": "1.0.0",
+  "description": "rebuilding site with all jekyll, perf optimizations",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mattJamesMedia/mattjamesmedia.github.io.git"
+  },
+  "keywords": [
+    "personal",
+    "site",
+    "jeyll",
+    "speed",
+    "experiments"
+  ],
+  "author": "Matt James",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mattJamesMedia/mattjamesmedia.github.io/issues"
+  },
+  "homepage": "https://github.com/mattJamesMedia/mattjamesmedia.github.io#readme",
+  "devDependencies": {
+    "critical": "^0.9.1",
+    "gulp": "^3.9.1"
+  },
+  "dependencies": {
+    "gulp-util": "^3.0.8"
+  }
+}
