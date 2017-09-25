@@ -17,6 +17,7 @@
 }
 
 .feature img {
+  background: white;
   opacity: 1;
   transition: opacity 1s ease-in;
 }
@@ -32,4 +33,13 @@ img.hide {
   grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
   grid-gap: 0.5em;
   grid-auto-rows: minmax(26vh, 190px);
+
+  img {
+    background: white;
+    opacity: 0.6;
+    transition: opacity 0.3s ease-in;
+    &:hover {
+      opacity: 0.9;
+    }
+  }
 }

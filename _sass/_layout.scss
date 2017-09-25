@@ -20,6 +20,7 @@
     position: fixed;
     width: 100%;
     top: 0px;
+    z-index: 10;
     border-top: solid 5px #34e4f6;
     @media screen and (min-width: 44em) {
       flex-direction: row;
@@ -72,6 +73,7 @@
     font-size: 2em;
     // flex: 2 0 auto;
     margin-left: auto;
+    text-shadow: none;
   }
 }
 .thin {
@@ -364,9 +366,9 @@ svg.cp {
       margin: 0 0 0 auto;
     }
   }
-  .design {
-    height: 55em;
-  }
+  // .design {
+  //   height: 55em;
+  // }
 }
 
 /**
