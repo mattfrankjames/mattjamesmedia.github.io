@@ -55,13 +55,16 @@
 .site-header__single::after {
   display: none;
 }
+.fonts-loaded .site-title {
+  font-family: $homeFont;
+}
 .site-title {
   font-size: 4em;
   line-height: 56px;
   letter-spacing: -1px;
   margin-bottom: 0;
   //float: left;
-  font-family: $homeFont;
+
   font-weight: normal;
   text-align: center;
   color: white;
@@ -77,8 +80,11 @@
   }
 }
 .thin {
-  font-family: $sansFont;
+
   text-transform: uppercase;
+}
+.fonts-loaded .thin {
+  font-family: $sansFont;
 }
 .nav {
   a {
@@ -175,13 +181,15 @@
   margin: 0;
   padding: 0;
   &--item {
-    font-family: $sansFont;
     color: white;
     border-bottom: 1px solid white;
     &:last-of-type {
       border-bottom: none;
     }
   }
+}
+.fonts-loaded .nav__list--item {
+  font-family: $sansFont;
 }
 .nav__link {
   color: inherit;
@@ -418,12 +426,13 @@ svg.cp {
   font-size: 42px;
   letter-spacing: -1px;
   line-height: 1;
-  font-family: $sansFont;
   @include media-query($on-laptop) {
     font-size: 36px;
   }
 }
-
+.fonts-loaded .post-title {
+  font-family: $sansFont;
+}
 .post-content {
   margin-bottom: $spacing-unit;
 

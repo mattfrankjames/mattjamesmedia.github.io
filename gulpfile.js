@@ -9,6 +9,7 @@ gulp.task('critical', function() {
     dest: '_includes/critical.css',
     width: 320,
     height: 480,
-    minify: true
+    minify: true,
+    extract: true
   });
 });
