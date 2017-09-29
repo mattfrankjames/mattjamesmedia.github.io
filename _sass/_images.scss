@@ -43,3 +43,15 @@ img.hide {
     }
   }
 }
+.thumbnails__web {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 1em;
+}
+.webBlock__image {
+  transform: scale(.98);
+  transition: transform .2s ease-in;
+  &:hover {
+    transform: scale(1);
+  }
+}

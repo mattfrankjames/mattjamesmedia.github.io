@@ -207,7 +207,7 @@ pre {
   background: black;
   max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
   max-width: calc(#{$content-width} - (#{$spacing-unit} * 2));
-  min-height: calc(100vh - 13em);
+  //min-height: calc(100vh - 13em);
   margin-right: auto;
   margin-left: auto;
   padding: $spacing-unit;

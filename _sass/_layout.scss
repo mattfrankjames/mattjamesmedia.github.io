@@ -17,7 +17,6 @@
     background-color: black;
     padding: 1em 1em 1.5em 1em;
     box-shadow: 0 0 10px #34e4f6;
-    position: fixed;
     width: 100%;
     top: 0px;
     z-index: 10;
@@ -26,6 +25,7 @@
       flex-direction: row;
       justify-content: space-between;
       align-items: baseline;
+      position: fixed;
     }
   }
 }
@@ -80,7 +80,6 @@
   }
 }
 .thin {
-
   text-transform: uppercase;
 }
 .fonts-loaded .thin {
@@ -385,7 +384,9 @@ svg.cp {
 .page-content {
   padding: 0;
   line-height: 1.5em;
-  margin-top: 6em;
+  @media screen and (min-widht: 44em) {
+    margin-top: 6em;
+  }
   &__home {
     margin-top: 0;
   }
