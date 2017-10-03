@@ -21,14 +21,16 @@ function toggleNav() {
 function imgSwap(e) {
   e.preventDefault();
   const imgPath = this.getAttribute('href');
-  const hiResImgPath = this.getAttribute('rel');
   const target = document.querySelector('.feature');
   const oldImage = document.querySelector('.feature img');
   const newImage = document.createElement('img');
   newImage.setAttribute('class', 'hide');
   newImage.setAttribute('src', `${imgPath}`);
-  newImage.setAttribute('srcset', `${imgPath} 1x, ${hiResImgPath} 2x`);
   newImage.setAttribute('alt', '');
+  if (this.getAttribute('rel')) {
+    const hiResImgPath = this.getAttribute('rel');
+    newImage.setAttribute('srcset', `${imgPath} 1x, ${hiResImgPath} 2x`);
+  }
   console.log(newImage);
   //newImage.classList.add('hide');
   target.prepend(newImage);
