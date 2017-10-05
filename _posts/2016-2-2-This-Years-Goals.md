@@ -6,7 +6,7 @@ title: 2016 Goals One Month In
 
 Lots of folks put up their goals for the year in a timely manner.. at the beginning of the year. I've been a little swamped lately and have only been compiling my list in my mind if what the year ahead holds. Since it's a couple days into February, I figured I might as well get it out there.
 
-###My List is as follows:
+### My List is as follows:
 1. Keep hitting it hard on JavaScript. I've made good strides this year, largely eliminating jQuery from my list of needs, but there's an infinitie amount more to go. I'm solid on DOM traversal and in browser UI interactions, but I'm going to aim for a more thorough mastery of objects and the language itself outside of a browser. I also plan on dipping a toe into ES6 and Node. Plenty to occupy me there.
 2. I am going to contribute to an open source project, or at least go through the motions entailed in doing so.
 3. I am going to get more comfortable with Git beyond the basics. Not being able to use it at my full time job is a real blocker when it comes to fully understanding all of its intracacies.
