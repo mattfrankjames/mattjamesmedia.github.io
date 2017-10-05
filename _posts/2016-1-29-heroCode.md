@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Lazy load a hero image for big screens 
+title: Lazy load a hero image for big screens
 ---
-##Do you need that thing for small devices?
+## Do you need that thing for small devices?
 
 Hey there. Does your promo site need a big hero image, but maybe you dont want to serve it to mobile devices to save on band width and increase performance? Use this simple function and call it with 'window.onload = insertImg()'
 
