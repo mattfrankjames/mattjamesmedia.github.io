@@ -1,0 +1,44 @@
+I"�<p>Unbeknownst to me, my hosting over at GoDaddy acquired some gnarly malware awhile back. To be fair to them, I kind of regard all their email as useless, so I’m sure they tried to inform me. That said, it was a bummer when an old WordPress site I kept around for no good reason managed to infect and take down everything I had set up on GoDaddy and an even bigger bummer when I was told I’d need to fork over a minimum of $80 to remedy the situation. Given that the convenience of staying with them despite their irritating sales tactics had now evaporated, I figured I might as well move this thing over to GitHub pages and go full <a href="http://jekyllrb.com/">Jekyll</a>.</p>
+
+<p>Some of the pros:</p>
+
+<ol>
+  <li>Finally getting off FTP. It never really mattered to me on a personal site, but it’s good to break that habit.</li>
+  <li>Keeping everything in markdown feels nice.</li>
+  <li>It’s given me the opportunity to do some performance tuning from <a href="https://github.com/bramstein/fontfaceobserver">Font Face Observer</a> to automating <a href="https://github.com/addyosmani/critical">Critical CSS</a> to ripping out jQuery.</li>
+  <li>It’s pretty fast:
+<img src="/img/googlePSI.png" alt="Google Page Speed Insights score 97/100" /></li>
+</ol>
+
+<p>I’ve also employed the glorious fluid typography techinique I learned from <a href="https://madebymike.com.au/writing/fluid-type-calc-examples/">Mike Riethmuller</a> at last year’s CSS Dev Conf coupled with <a href="https://css-tricks.com/snippets/css/system-font-stack/">system fonts</a> for body copy text. I’m really loving the way the type scales seamlessly with minimal media queries and system fonts tend to feel right on whatever environment I’m on. They’re a bit heavy on macOS, but one thing at a time.</p>
+
+<h3 id="basic-fluid-type-snippet">Basic Fluid type snippet</h3>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>:root {
+  font-size: 0.875rem;
+  @media screen and (min-width: 20rem) {
+    font-size: calc(0.875rem + 0.5 * ((100vw - 20rem) / 60));
+  }
+  @media screen and (min-width: 80rem) {
+    font-size: 1.375rem;
+  }
+}
+</code></pre></div></div>
+
+<p>Some of the cons:</p>
+
+<ol>
+  <li>I’ve lost some of the niceities from jQuery. Specifically, an easy to implement scrolling header, smooth scrolling to page regions and fade in fade out effects with, well, <code class="highlighter-rouge">fadeIn</code> and <code class="highlighter-rouge">fadeOut</code>.</li>
+  <li>I’m not really digging full page refreshes anymore. Clicking from a nav to different pages feels a bit antiquated at this point, despite the fact that it’s still the paradigm for 99.999999% of the web. I’d much prefer some hot page region content swaps based on state or something similar, but you know, MVP and all.</li>
+  <li>I modified the default Jekyll theme, which I acknowledge is sub-optimal, and I need to dig out from under some of the cruft. Getting there though..</li>
+</ol>
+
+<p>There’s still plenty more to do. First of all, I need to get <code class="highlighter-rouge">https</code> figured out so I can drop a Service Worker in here. I have some work to do on the nav to make it a bit more robust on mobile for the majority of user expectations. I’d also be well served compartmentalizing the JS a bit and making the tooling set up a bit more refined versus the splatter paint approach I used to get this thing out the door.</p>
+
+<p>And of course, there’s a good case for a redesign, but all in good time. For now, though- Grid! Shape Outside! Font Face Observer! Fluid Type! Arrow functions! Cloudfare CDN!</p>
+
+<p>Most importantly, I’m hoping the new set up inspires me to write more than once every 18 months. A few times a year would be a big win.</p>
+
+<p>Thanks for reading.</p>
+
+:ET
