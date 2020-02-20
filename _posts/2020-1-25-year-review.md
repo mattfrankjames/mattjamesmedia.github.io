@@ -11,7 +11,7 @@ Still, I can look back at my first six months with the company and point to some
 
 - Implementing a suite of automated Webdriver IO tests connected to Cross Browser Testing.
 - Bringing our Lighthouse accessibility score from a 37 to 91. (The nav still has some `<ul>` elements with `<div>`s as direct children and there's a marketing `<iframe>` without a label. Not ideal, but a big improvement).
-- Implenting a `serviceworler` and `manifest` into the site, giving us a baseline PWA and a massive performance boost.
+- Implenting a `serviceworker` and `manifest` into the site, giving us a baseline PWA and a massive performance boost.
 - UI improvements projected to generate over \$5 million in additional sales year over year if current analytic trends hold.
 - Implementation of a code splitting module within our Magento instance that has cut our time-to-interactive metrics in half and doubled our Lighthouse performance score for product pages on a throttled connection with 4x CPU slowdown.
 
