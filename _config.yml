@@ -13,7 +13,7 @@ description: A multimedia professional with expertise in front end development, 
 baseurl: '' # the subpath of your site, e.g. /blog
 url: 'http://www.mattjamesmedia.com' # the base hostname & protocol for your site
 twitter_username: mattFrankJames
-github_username: mattJamesMedia
+github_username: mattfrankjames
 
 # Build settings
 markdown: kramdown
