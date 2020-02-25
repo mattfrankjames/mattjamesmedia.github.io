@@ -169,11 +169,11 @@
   bottom: 0;
   background-color: black;
   width: 300px;
-  transform: translateX(-340px);
+  transform: translateX(-360px);
   box-shadow: 2px 16px 20px #30e3f6;
   transition: transform 0.3s ease-in-out;
   &--open {
-    transform: translateX(340px);
+    transform: translateX(0);
   }
 }
 .nav__list {
