@@ -73,13 +73,16 @@
     text-decoration: none;
     cursor: pointer;
   }
-  &__single {
-    font-size: 2em;
-    // flex: 2 0 auto;
-    margin-left: auto;
-    text-shadow: none;
-  }
 }
+    .site-title__single a{
+      font-size: 2rem;
+      // flex: 2 0 auto;
+      margin-left: auto;
+      text-shadow: none;
+      &:hover {
+        text-decoration: none;
+      }
+    }
 .thin {
   text-transform: uppercase;
 }
