@@ -76,12 +76,13 @@
 }
     .site-title__single a{
       font-size: 2rem;
-      // flex: 2 0 auto;
-      margin-left: auto;
       text-shadow: none;
       &:hover {
         text-decoration: none;
       }
+    }
+    .site-title__single {
+      margin-left: auto;
     }
 .thin {
   text-transform: uppercase;
