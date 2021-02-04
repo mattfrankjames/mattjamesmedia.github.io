@@ -204,7 +204,10 @@
   }
 }
 .header__navTrigger {
-  text-decoration: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: inherit;
   color: inherit;
   display: inline-block;
   position: absolute;
@@ -216,14 +219,11 @@
     content: '';
     display: block;
     height: 5px;
-    width: 3.35em;
+    width: 3.5em;
     background-color: white;
-    margin-left: -10%;
+    margin-left: 0;
     transition: all 0.3s ease-out;
-    transform-origin: 13%;
-  }
-  &:hover {
-    text-decoration: none;
+    transform-origin: 20%;
   }
   &--clicked {
     color: transparent;
